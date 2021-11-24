@@ -1,0 +1,100 @@
+.container-outer {
+	display: block;
+	position: relative;
+	width: 257px;
+	height: 130px;
+	box-shadow: 0 2px 5px rgb(194, 194, 194);
+	margin: 400px auto;
+	background-color: #ffffff;
+	border-radius: 2px;
+}
+
+.container-inner {
+	position: relative;
+	left: 36px;
+	top: 10px;
+}
+
+.counter-buttons {
+	border-style: solid;
+	border-radius: 8px;
+	height: 56px;
+	width: 180px;
+	border-width: 1px;
+	border-color: #b24242;
+}
+
+.counter-button-decrement:hover {
+	background-color: #e3dcdc;
+}
+
+.counter-button-decrement {
+	border-radius: 8px 0px 0px 8px;
+	width: 56px;
+	height: 55px;
+	border-color: #b24242;
+	background-color: white;
+	border-style: hidden;
+	font-weight: 900;
+	font-size: 30px;
+	font-style: normal;
+	color: #b24242;
+}
+
+.counter-count {
+	text-align: center;
+	width: 64px;
+	height: 54px;
+	background-color: #fbe8e8;
+	border-style: hidden;
+	font-weight: 900;
+	font-size: 30px;
+	font-style: normal;
+	color: #b24242;
+}
+
+.counter-button-increment {
+	height: 56px;
+	width: 56px;
+	border-color: #b24242;
+	border-radius: 0px 8px 8px 0px;
+	background-color: #b24242;
+	border-style: hidden;
+	font-weight: 900;
+	font-size: 30px;
+	font-style: normal;
+	color: #ffffff;
+}
+
+.counter-button-increment:hover {
+	background-color: #f36363;
+}
+
+.loader {
+	display: inline-block;
+}
+
+.loader:after {
+	content: " ";
+	display: block;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	border: 2px solid rgb(0, 0, 0);
+	border-color: rgb(0, 0, 0) transparent rgb(0, 0, 0) transparent;
+	animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.counter-text {
+	margin-left: 4px;
+	margin-top: 10px;
+}
